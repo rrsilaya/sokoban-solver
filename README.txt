@@ -1,8 +1,5 @@
 Sokoban Solver
 -------------------------------
-Ralph Lawrence Silaya
-2015-10196
-U-10L
 
 To run the web app, follow the steps below:
 1. Ensure that you have the latest version of Node and yarn or npm.

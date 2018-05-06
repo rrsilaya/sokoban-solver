@@ -1,0 +1,43 @@
+/* Colors */
+$background = #262E26;
+$primary = #90122E;
+$secondary = #ECE0A6;
+$white = #fff;
+
+button {
+  border: none;
+  font-weight: 500;
+  background: none;
+  color: $white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &.primary {
+    background-color: $primary;
+    color: $secondary;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    line-height: 24px;
+  }
+  
+  &.primary:hover {
+    background-color: lighten($primary, 5%);
+  }
+  
+  &.primary[disabled] {
+    background-color: $primary;
+  }
+  
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+}
+
+.text-primary { color: $primary; }
+.text-secondary { color: $secondary; }
+.bg-primary { background-color: $primary; }
+.bg-secondary { background-color: $secondary; }

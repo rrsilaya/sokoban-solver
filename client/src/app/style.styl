@@ -1,0 +1,32 @@
+.wrapper
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  
+  & > .panel {
+    height: 100%;
+    display: flex;
+  }
+  
+  .board { flex: 3; }
+  .solver { flex: 2}
+  
+/* Transition Styles */
+.wrapper-enter
+  max-width: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+
+  &.wrapper-enter-active {
+    max-width: 100%;
+  }
+
+.wrapper-leave
+  max-width: 100%;
+  transition: all 0.5s ease;
+  
+  &.wrapper-leave-active {
+    max-width: 0;
+    overflow: hidden;
+  }
